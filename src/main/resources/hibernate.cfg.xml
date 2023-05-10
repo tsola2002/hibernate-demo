@@ -8,21 +8,26 @@
 
     <!-- Database connection settings -->
     <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-    <property name="connection.url">jdbc:mysql://localhost:8889/hello-world</property>
+    <property name="connection.url">jdbc:mysql://localhost:8889/db_school</property>
     <property name="connection.username">root</property>
     <property name="connection.password">root</property>
 
     <!-- SQL dialect -->
-    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+<!--    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>-->
+    <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
 
     <!-- Echo all executed SQL to stdout -->
     <property name="show_sql">true</property>
+
+    <!-- Create/update tables automatically using mapping metadata -->
+    <property name="hbm2ddl.auto">update</property>
 
     <!-- Use XML-based mapping metadata -->
     <!--    <mapping resource="com.tsola2002.Message.hbm.xml"/>-->
 
     <!-- Use Annotation-based mapping metadata -->
-    <mapping class="com.tsola2002.entity.Message"/>
+    <mapping class="com.tsola2002.entity.Student"/>
+    <mapping class="com.tsola2002.entity.Guide"/>
 
   </session-factory>
 </hibernate-configuration>
