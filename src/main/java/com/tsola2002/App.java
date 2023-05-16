@@ -10,14 +10,18 @@ public class App
     public static void main( String[] args )
     {
 
-        Session session = HibernateUtil.getSessionFactory().openSession();
+        Session session = HibernateUtil.getSessionFactory()
+                                       .openSession();
+
         session.beginTransaction();
 
-        Message message = new Message( "Hello World with Hibernate and JPA Annotations with domain knowledge" );
+        Message message = new Message( "Hello World with Hibernate and JPA Annotations with logging properties" );
 
         session.save(message);
 
-        session.getTransaction().commit();
+        session.getTransaction()
+               .commit();
+
         session.close();
 
     }

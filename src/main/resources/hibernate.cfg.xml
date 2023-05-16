@@ -18,6 +18,9 @@
     <!-- Echo all executed SQL to stdout -->
     <property name="show_sql">true</property>
 
+    <!--  Activate Hibernate Statistics  -->
+    <property name="generate_statistics">true</property>
+
     <!-- Use XML-based mapping metadata -->
     <!--    <mapping resource="com.tsola2002.Message.hbm.xml"/>-->
 
