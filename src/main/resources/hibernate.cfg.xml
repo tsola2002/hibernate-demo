@@ -19,6 +19,9 @@
     <!-- Echo all executed SQL to stdout -->
     <property name="show_sql">true</property>
 
+    <!--  Activate Hibernate Statistics  -->
+    <property name="generate_statistics">true</property>
+
     <!-- Create/update tables automatically using mapping metadata -->
     <property name="hbm2ddl.auto">update</property>
 
