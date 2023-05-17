@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public class Guide {
 
   @Id
-  @GeneratedValue(strategy= GenerationType.IDENTITY)
+  @GeneratedValue(strategy= GenerationType.AUTO)
   private Long id;
 
   @Column(name="staff_id", nullable=false)
@@ -26,7 +26,7 @@ public class Guide {
 
   private Integer salary;
 
-  @OneToMany(mappedBy = "guide", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+  @OneToMany(mappedBy = "guide", cascade = {CascadeType.PERSIST})
   private Set<Student> students = new HashSet<Student>();
 
   public Guide() {}

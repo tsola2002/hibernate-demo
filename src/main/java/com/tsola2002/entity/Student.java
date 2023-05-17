@@ -15,7 +15,7 @@ import javax.persistence.Table;
 public class Student {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
   @Column(name="enrollment_id", nullable=false)
@@ -23,7 +23,7 @@ public class Student {
 
   private String name;
 
-  @ManyToOne(cascade={CascadeType.PERSIST})
+  @ManyToOne(cascade={CascadeType.PERSIST, CascadeType.REMOVE})
   @JoinColumn(name="guide_id")
   private Guide guide;
 
@@ -48,5 +48,15 @@ public class Student {
 
   public void setGuide(Guide guide) {
     this.guide = guide;
+  }
+
+  @Override
+  public String toString() {
+    return "Student{" +
+        "id=" + id +
+        ", enrollmentId='" + enrollmentId + '\'' +
+        ", name='" + name + '\'' +
+        ", guide=" + guide +
+        '}';
   }
 }

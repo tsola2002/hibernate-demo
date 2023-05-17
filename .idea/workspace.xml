@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1a929e2-e719-4a4e-8ff1-542d0a92f8ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tsola2002/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tsola2002/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tsola2002/entity/Guide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tsola2002/entity/Guide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tsola2002/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tsola2002/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Message.hbm.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +62,7 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/tsola2002" />
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunManager">
@@ -102,5 +107,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tsola2002/App.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
